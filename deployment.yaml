@@ -5,6 +5,7 @@ metadata:
   labels:
     app: nodejstodo
   name: nodejstodo
+  namespace: nodejs
 spec:
   replicas: 3
   selector:
@@ -13,14 +14,11 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: nodejstodo
     spec:
       containers:
       - image: soewailin/nodejs-todolist:c43fcbb8ecaede027f9ecf26e89c8f15a0692a79
         name: nodejs-todolist
-        ports:
-        - containerPort: 4000
         resources: {}
 

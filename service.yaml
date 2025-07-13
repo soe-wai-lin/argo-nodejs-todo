@@ -4,7 +4,7 @@ metadata:
   labels:
     app: nodejstodo
   name: nodesvc
-  namespace: default
+  namespace: nodejs
 spec:
   ports:
   - port: 80

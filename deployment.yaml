@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nodejstodo
+  name: nodejstodo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nodejstodo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nodejstodo
+    spec:
+      containers:
+      - image: soewailin/nodejs-todolist:c43fcbb8ecaede027f9ecf26e89c8f15a0692a79
+        name: nodejs-todolist
+        ports:
+        - containerPort: 4000
+        resources: {}
+

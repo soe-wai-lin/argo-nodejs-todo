@@ -18,7 +18,7 @@ spec:
         app: nodejstodo
     spec:
       containers:
-      - image: soewailin/nodejs-todolist:75d1f98bbf88feb3cb9800aa0d3639e16ee568e0
+      - image: soewailin/nodejs-todolist:8ad83533e7683c6a400db997a6f56ae81740cef0
         name: nodejs-todolist
         resources: {}
 
